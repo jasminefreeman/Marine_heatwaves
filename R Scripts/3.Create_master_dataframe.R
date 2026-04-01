@@ -30,7 +30,7 @@ mass_combined <- imap_dfr(
 
 ####-- amend columns names --####
 
-# this pulls out the separate parts of the model run name, into different columns 
+# this pulls out the separate parts of the model_run name, into different columns 
 # and drops the ones we don't want
 mass_combined <- mass_combined %>% 
   mutate(model_run = sub("\\.rds$", "", model_run)) %>%  # this gets rid of .rds file extension at the end
@@ -70,7 +70,8 @@ mass_combined3 <- mass_combined2 %>%
     hw_start = (month - 1) * 30 + 1, 
     hw_end = month * 30, 
     heatwave = year == 2 & yearday >= hw_start & yearday <= hw_end) %>% 
-  relocate(year, yearday, hw_start, hw_end, heatwave, .after = time) 
+  relocate(year, yearday, hw_start, hw_end, heatwave, .after = time) %>% 
+  rename(hw_month = month, hw_temp = temp) # renamed for clarity
 
 final <- mass_combined3
 
