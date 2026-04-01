@@ -1,0 +1,224 @@
+library(StrathE2E2)   #version 4
+
+######################################################
+# Some notes
+
+# Calling non-exported function: need this to generate the results object 
+# e.g.    StrathE2E2:::aggregate_model_output
+
+######################################################
+
+
+
+######################################################################################################
+######################################################################################################
+######################################################################################################
+# Simple setup in which the model is run in steps of 1 year at a time, extracting end state each time
+# and inserting into the model object before re-running.
+# Model output is accummulated into a combined multi-year object
+
+N_YEAR_SETS<-5
+
+model<-e2e_read("North_Sea","1970-1999")    # SELECT YOUR REQUIRED MODEL
+
+initial_state <- model$data$initial.state
+
+for(kk in 1:N_YEAR_SETS){
+
+if(kk==1){
+  newmodel<-model
+}
+
+#########################################
+# HERE IS WHERE YOU WOULD INSERT YOUR CODE TO VARY THE INPUT DRIVING CONDITIONS ON A YEAR BY YEAR BASIS
+# EG INCREMENT FISHING GEAR ACTIVITY RATES EACH YEAR. AN EXAMPLE OF THIS IS PROVIDED FURTHER DOWN THIS SCRIPT
+#########################################
+
+results<-e2e_run(newmodel,nyears=1,csv.output=FALSE)
+   daily_output <- results$output
+   offshore_annual_group_land_disc<-results$total.annual.catch$offshore_annual_group_land_disc
+   inshore_annual_group_land_disc<-results$total.annual.catch$inshore_annual_group_land_disc
+   offshore_annual_group_gear_land_disc<-results$annual.catch.by.gear$offshore_annual_group_gear_land_disc
+   inshore_annual_group_gear_land_disc<-results$annual.catch.by.gear$inshore_annual_group_gear_land_disc
+
+if(kk==1){ 
+   cum_output<-daily_output
+   cum_offshore_annual_group_land_disc<-offshore_annual_group_land_disc
+   cum_inshore_annual_group_land_disc<-inshore_annual_group_land_disc
+   cum_offshore_annual_group_gear_land_disc<-offshore_annual_group_gear_land_disc
+   cum_inshore_annual_group_gear_land_disc<-inshore_annual_group_gear_land_disc
+}
+
+if(kk>1){
+   daily_output$time <- daily_output$time + (cum_output$time[nrow(cum_output)] -1)
+   offshore_annual_group_land_disc$year<-kk
+   inshore_annual_group_land_disc$year<-kk
+   offshore_annual_group_gear_land_disc$year<-kk
+   inshore_annual_group_gear_land_disc$year<-kk
+
+   cum_output <- rbind(cum_output, daily_output[2:(nrow(daily_output)),])
+   cum_offshore_annual_group_land_disc<- rbind(cum_offshore_annual_group_land_disc,offshore_annual_group_land_disc)
+   cum_inshore_annual_group_land_disc<-  rbind(cum_inshore_annual_group_land_disc,inshore_annual_group_land_disc)
+   cum_offshore_annual_group_gear_land_disc<-  rbind(cum_offshore_annual_group_gear_land_disc,offshore_annual_group_gear_land_disc)
+   cum_inshore_annual_group_gear_land_disc<-  rbind(cum_inshore_annual_group_gear_land_disc,inshore_annual_group_gear_land_disc)
+}
+
+#extract end state each yer
+end_state<-daily_output[nrow(daily_output),2:(ncol(daily_output))]
+new_initial_state<-initial_state
+for(jj in 1:(ncol(daily_output)-1)){
+new_initial_state[jj] <- end_state[jj]
+}
+newmodel$data$initial.state <- new_initial_state
+
+}
+
+#----------------
+
+# At the end, merge the cumulatiVe results back onto a results object compatible with all other e2e functions
+
+cum_results<-results
+cum_results$output <- cum_output
+cum_results$aggregates  <- StrathE2E2:::aggregate_model_output(model, cum_output)
+
+cum_results$total.annual.catch$offshore_annual_group_land_disc <- cum_offshore_annual_group_land_disc
+cum_results$total.annual.catch$inshore_annual_group_land_disc  <- cum_inshore_annual_group_land_disc
+
+cum_results$annual.catch.by.gear$offshore_annual_group_gear_land_disc <- cum_offshore_annual_group_gear_land_disc
+cum_results$annual.catch.by.gear$inshore_annual_group_gear_land_disc  <- cum_inshore_annual_group_gear_land_disc
+
+#-----------
+
+e2e_plot_ts(model,cum_results,selection="ECO")
+
+#...
+
+e2e_plot_ts(model,cum_results,selection="CATCH")
+
+#...
+
+e2e_plot_eco(model, selection="NUT_PHYT",results=cum_results)
+
+
+######################################################################################################
+######################################################################################################
+######################################################################################################
+
+
+
+
+
+######################################################################################################
+######################################################################################################
+######################################################################################################
+
+# EXAMPLE OF INCREMENTING FISHING ACTIVITY YEAR BY YEAR
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# gear_mult is set to 1 in year 1 and ramps up lineally to 3 by year 5 and then stays steady for 5 years, and reverses
+
+
+N_YEAR_SETS<-20
+
+model<-e2e_read("North_Sea","1970-1999")
+
+initial_state <- model$data$initial.state
+
+base_gear_mult<-model$data$fleet.model$gear_mult        # vector of gear activity rate multiplers
+
+
+for(kk in 1:N_YEAR_SETS){
+
+if(kk==1){
+  newmodel<-model
+}
+
+new_gear_mult<-base_gear_mult
+
+#----------------------
+if(kk==2) new_gear_mult[]<-1.4
+if(kk==3) new_gear_mult[]<-1.8
+if(kk==4) new_gear_mult[]<-2.2
+if(kk==5) new_gear_mult[]<-2.6
+if(kk>5 & kk<11)  new_gear_mult[]<-3
+if(kk==11) new_gear_mult[]<-2.6
+if(kk==12) new_gear_mult[]<-2.2
+if(kk==13) new_gear_mult[]<-1.8
+if(kk==14) new_gear_mult[]<-1.4
+if(kk>14)  new_gear_mult[]<-1
+#----------------------
+
+newmodel$data$fleet.model$gear_mult<-new_gear_mult
+
+results<-e2e_run(newmodel,nyears=1,csv.output=FALSE)
+   daily_output <- results$output
+   offshore_annual_group_land_disc<-results$total.annual.catch$offshore_annual_group_land_disc
+   inshore_annual_group_land_disc<-results$total.annual.catch$inshore_annual_group_land_disc
+   offshore_annual_group_gear_land_disc<-results$annual.catch.by.gear$offshore_annual_group_gear_land_disc
+   inshore_annual_group_gear_land_disc<-results$annual.catch.by.gear$inshore_annual_group_gear_land_disc
+
+if(kk==1){ 
+   cum_output<-daily_output
+   cum_offshore_annual_group_land_disc<-offshore_annual_group_land_disc
+   cum_inshore_annual_group_land_disc<-inshore_annual_group_land_disc
+   cum_offshore_annual_group_gear_land_disc<-offshore_annual_group_gear_land_disc
+   cum_inshore_annual_group_gear_land_disc<-inshore_annual_group_gear_land_disc
+}
+
+if(kk>1){
+   daily_output$time <- daily_output$time + (cum_output$time[nrow(cum_output)] -1)
+   offshore_annual_group_land_disc$year<-kk
+   inshore_annual_group_land_disc$year<-kk
+   offshore_annual_group_gear_land_disc$year<-kk
+   inshore_annual_group_gear_land_disc$year<-kk
+
+   cum_output <- rbind(cum_output, daily_output[2:(nrow(daily_output)),])
+   cum_offshore_annual_group_land_disc<- rbind(cum_offshore_annual_group_land_disc,offshore_annual_group_land_disc)
+   cum_inshore_annual_group_land_disc<-  rbind(cum_inshore_annual_group_land_disc,inshore_annual_group_land_disc)
+   cum_offshore_annual_group_gear_land_disc<-  rbind(cum_offshore_annual_group_gear_land_disc,offshore_annual_group_gear_land_disc)
+   cum_inshore_annual_group_gear_land_disc<-  rbind(cum_inshore_annual_group_gear_land_disc,inshore_annual_group_gear_land_disc)
+}
+
+#extract end state each yer
+end_state<-daily_output[nrow(daily_output),2:(ncol(daily_output))]
+new_initial_state<-initial_state
+for(jj in 1:(ncol(daily_output)-1)){
+new_initial_state[jj] <- end_state[jj]
+}
+newmodel$data$initial.state <- new_initial_state
+
+}
+
+#----------------
+
+# At the end, merge the cumulatibe results back onto a results object compativel with all other e2e functions
+
+cum_results<-results
+cum_results$output <- cum_output
+cum_results$aggregates  <- StrathE2E2:::aggregate_model_output(model, cum_output)
+
+cum_results$total.annual.catch$offshore_annual_group_land_disc <- cum_offshore_annual_group_land_disc
+cum_results$total.annual.catch$inshore_annual_group_land_disc  <- cum_inshore_annual_group_land_disc
+
+cum_results$annual.catch.by.gear$offshore_annual_group_gear_land_disc <- cum_offshore_annual_group_gear_land_disc
+cum_results$annual.catch.by.gear$inshore_annual_group_gear_land_disc  <- cum_inshore_annual_group_gear_land_disc
+
+#-----------
+
+e2e_plot_ts(model,cum_results,selection="ECO")
+
+#...
+
+e2e_plot_ts(model,cum_results,selection="CATCH")
+
+#...
+
+e2e_plot_eco(model, selection="NUT_PHYT",results=cum_results)
+
+
+######################################################################################################
+######################################################################################################
+######################################################################################################
+
+
+
