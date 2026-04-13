@@ -1,0 +1,13 @@
+Gear_name,Gear_code,Activity_(s/m2/d),Plough_rate_(m2/s)
+Small_scale_gill_encircle_nets,SSEN,0.001161127,0
+Small_scale_line_fishing,SSLF,0.001972219,0
+Small_scale_seine_nets,SSSN,0.000382792,0
+Small_scale_inshore_gears,SSIG,0.000242519,0
+SenGam_bottom_trawlers,SenBT,1.71459E-06,17.1
+Foreign_bottom_trawlers,ForBT,4.13992E-07,17.1
+SenGam_pole_and_line,SGPL,3.12219E-06,0
+Foreign_pole_and_line,ForPL,2.5043E-06,0
+SenGam_pelagic_trawl_seine,SGPTS,1.29669E-06,0
+Foreign_pelagic_trawl_seine,ForPTS,6.97987E-06,0
+SenGam_longline_gillnet,SGLLGN,1.02991E-05,0
+Foreign_longline_gillnet,ForLLGN,1.25112E-07,0

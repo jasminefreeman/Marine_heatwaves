@@ -1,0 +1,13 @@
+Gear_name,Gear_code,Discardrate_PF,Discardrate_DF,Discardrate_MF,Discardrate_FDB,Discardrate_CSB,Discardrate_CZ,Discardrate_BD,Discardrate_SL,Discardrate_CT,Discardrate_KP
+midwater trawl,MWT,0,0,0,0,0,0,0,1,1,0
+nets including small scale,NTS,0,0,0,0,0,0,0,1,1,0
+pole and line,TPL,0,0,0,0,0,0,0,1,1,0
+squid jig,SJ,0,0,0,0,0,0,0,1,1,0
+longline,LL,0,0,0,0,0,0,0.4,1,1,0
+purse seine,PS,0,0,0,0,0,0,0,1,1,0
+demersal trawl,DMT,0,0.117321994,0,0,0,0,1,1,1,0
+WC Rock Lobster traps,WCRLT,0,0,0,0,0,0,0,1,1,0
+recreational fishing gear,RFG,0,0,0,0,0,0,0,1,1,0
+small scale lines,SSL,0,0,0,0,0,0,0,1,1,0
+subsistence fishing gear,SBF,0,0,0,0,0,0,0,1,1,0
+NA,NA,0,0,0,0,0,0,0,0,0,0

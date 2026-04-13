@@ -1,0 +1,11 @@
+﻿Group,Regional_harvest_ratio,Comments
+Planktivorous_fish,NA,NA
+Demersal_fish,0.000338749,Calculated by applying the harvest ratio of the blackspot seabream to all the species that are fished present in the demersal cruise 
+Migratory_fish,NA,NA
+Benthos_susp-dep,NA,NA
+Benthos_carn-scav,NA,NA
+Zooplankton_carn,NA,Little to no records of bycatch incidences and no event of bycatch mortality
+Birds,NA,Bycatch of seabirds is considered negligible in the Azores
+Pinnipeds,NA,No pinnipeds present in the Azores
+Cetaceans,NA,NA
+Macrophytes,NA,NA

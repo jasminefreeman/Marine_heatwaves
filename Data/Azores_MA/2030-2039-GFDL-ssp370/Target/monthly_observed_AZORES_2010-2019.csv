@@ -1,0 +1,109 @@
+Month,Variable,median,lower_centile,upper_centile,Units,low_cent_value,upp_cent_value,Comments
+Jan,surface_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Feb,surface_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Mar,surface_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Apr,surface_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+May,surface_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Jun,surface_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Jul,surface_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Aug,surface_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Sep,surface_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Oct,surface_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Nov,surface_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Dec,surface_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Jan,deep_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Feb,deep_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Mar,deep_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Apr,deep_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+May,deep_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Jun,deep_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Jul,deep_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Aug,deep_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Sep,deep_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Oct,deep_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Nov,deep_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Dec,deep_nitrate,NA,NA,NA,mMNm3,17,83,No_data_available
+Jan,surface_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Feb,surface_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Mar,surface_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Apr,surface_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+May,surface_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Jun,surface_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Jul,surface_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Aug,surface_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Sep,surface_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Oct,surface_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Nov,surface_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Dec,surface_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Jan,deep_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Feb,deep_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Mar,deep_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Apr,deep_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+May,deep_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Jun,deep_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Jul,deep_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Aug,deep_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Sep,deep_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Oct,deep_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Nov,deep_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Dec,deep_ammonia,NA,NA,NA,mMNm3,17,83,No_data_available
+Jan,omniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Feb,omniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Mar,omniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Apr,omniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+May,omniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Jun,omniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Jul,omniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Aug,omniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Sep,omniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Oct,omniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Nov,omniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Dec,omniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Jan,carniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Feb,carniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Mar,carniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Apr,carniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+May,carniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Jun,carniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Jul,carniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Aug,carniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Sep,carniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Oct,carniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Nov,carniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Dec,carniv_zooplankton,NA,NA,NA,mMNm3,17,83,No_data_available
+Jan,larvae_susp_dep_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Feb,larvae_susp_dep_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Mar,larvae_susp_dep_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Apr,larvae_susp_dep_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+May,larvae_susp_dep_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Jun,larvae_susp_dep_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Jul,larvae_susp_dep_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Aug,larvae_susp_dep_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Sep,larvae_susp_dep_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Oct,larvae_susp_dep_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Nov,larvae_susp_dep_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Dec,larvae_susp_dep_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Jan,larvae_carn_scav_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Feb,larvae_carn_scav_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Mar,larvae_carn_scav_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Apr,larvae_carn_scav_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+May,larvae_carn_scav_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Jun,larvae_carn_scav_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Jul,larvae_carn_scav_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Aug,larvae_carn_scav_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Sep,larvae_carn_scav_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Oct,larvae_carn_scav_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Nov,larvae_carn_scav_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Dec,larvae_carn_scav_benthos,NA,NA,NA,mMNm3,17,83,No_data_available
+Jan,surface_chlorophyll,0.191444954,0.173965369,0.213382151,mgm3,0.2,0.8,Copernicus remote sensing data from OCEANCOLOUR_GLO_BGC_L4_MY_009_104 for Azores_MA 2010-2019
+Feb,surface_chlorophyll,0.194521748,0.186467596,0.2097193,mgm3,0.2,0.8,Copernicus remote sensing data from OCEANCOLOUR_GLO_BGC_L4_MY_009_104 for Azores_MA 2010-2019
+Mar,surface_chlorophyll,0.25849324,0.215609499,0.29052642,mgm3,0.2,0.8,Copernicus remote sensing data from OCEANCOLOUR_GLO_BGC_L4_MY_009_104 for Azores_MA 2010-2019
+Apr,surface_chlorophyll,0.23484947,0.200867543,0.28264054,mgm3,0.2,0.8,Copernicus remote sensing data from OCEANCOLOUR_GLO_BGC_L4_MY_009_104 for Azores_MA 2010-2019
+May,surface_chlorophyll,0.162455961,0.134460192,0.186194319,mgm3,0.2,0.8,Copernicus remote sensing data from OCEANCOLOUR_GLO_BGC_L4_MY_009_104 for Azores_MA 2010-2019
+Jun,surface_chlorophyll,0.102212032,0.089278302,0.115833463,mgm3,0.2,0.8,Copernicus remote sensing data from OCEANCOLOUR_GLO_BGC_L4_MY_009_104 for Azores_MA 2010-2019
+Jul,surface_chlorophyll,0.085800311,0.07992329,0.090475159,mgm3,0.2,0.8,Copernicus remote sensing data from OCEANCOLOUR_GLO_BGC_L4_MY_009_104 for Azores_MA 2010-2019
+Aug,surface_chlorophyll,0.082886486,0.075787272,0.090168113,mgm3,0.2,0.8,Copernicus remote sensing data from OCEANCOLOUR_GLO_BGC_L4_MY_009_104 for Azores_MA 2010-2019
+Sep,surface_chlorophyll,0.086371199,0.079055972,0.096484653,mgm3,0.2,0.8,Copernicus remote sensing data from OCEANCOLOUR_GLO_BGC_L4_MY_009_104 for Azores_MA 2010-2019
+Oct,surface_chlorophyll,0.112782216,0.105569605,0.117637944,mgm3,0.2,0.8,Copernicus remote sensing data from OCEANCOLOUR_GLO_BGC_L4_MY_009_104 for Azores_MA 2010-2019
+Nov,surface_chlorophyll,0.146760973,0.13789022,0.154834899,mgm3,0.2,0.8,Copernicus remote sensing data from OCEANCOLOUR_GLO_BGC_L4_MY_009_104 for Azores_MA 2010-2019
+Dec,surface_chlorophyll,0.179567409,0.16796116,0.181848955,mgm3,0.2,0.8,Copernicus remote sensing data from OCEANCOLOUR_GLO_BGC_L4_MY_009_104 for Azores_MA 2010-2019

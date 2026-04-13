@@ -1,0 +1,13 @@
+Gear_id,Gear_name,Gear_to_which_linked,Linkage_coefficient,Comments
+1,Purse_Seine,4,1,Linked to other illegal activity
+2,Longlines,1,1,Linked to other tuna gears
+3,Illegal_longlines,2,1,Linked to other tuna gears
+4,Otter_trawls,1,1,Linked to other illegal activity
+5,Artisanal_handlines,6,1,Linked to other inshore gears
+6,Hand-gathering_and_pots,5,1,Linked to other inshore gears
+7,NA,NA,NA,NA
+8,NA,NA,NA,NA
+9,NA,NA,NA,NA
+10,NA,NA,NA,NA
+11,NA,NA,NA,NA
+12,NA,NA,NA,NA

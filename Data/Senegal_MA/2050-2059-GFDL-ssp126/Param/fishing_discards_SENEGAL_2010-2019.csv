@@ -1,0 +1,13 @@
+Gear_name,Gear_code,Discardrate_PF,Discardrate_DF,Discardrate_MF,Discardrate_FDB,Discardrate_CSB,Discardrate_CZ,Discardrate_BD,Discardrate_SL,Discardrate_CT,Discardrate_KP
+Small_scale_gill_encircle_nets,SSEN,0,0,0,0,0,0,1,1,1,1
+Small_scale_line_fishing,SSLF,0,0,0,0,0,0,1,1,1,1
+Small_scale_seine_nets,SSSN,0,0,0,0,0,0,1,1,1,1
+Small_scale_inshore_gears,SSIG,0,0,0,0,0,0,1,1,1,1
+SenGam_bottom_trawlers,SenBT,0.284022005,0.219143138,0,0,0,0.261174183,1,1,1,1
+Foreign_bottom_trawlers,ForBT,0.437606143,0.203294819,0,0,0,0.682577508,1,1,1,1
+SenGam_pole_and_line,SGPL,0,0,0,0,0,0,1,1,1,1
+Foreign_pole_and_line,ForPL,0,0,0,0,0,0,1,1,1,1
+SenGam_pelagic_trawl_seine,SGPTS,0,0.00053315,0,0,0,0,1,1,1,1
+Foreign_pelagic_trawl_seine,ForPTS,0.022199763,0.064360014,0,0,0,0.983859969,1,1,1,1
+SenGam_longline_gillnet,SGLLGN,0,0.148518588,0,0,0,0,1,1,1,1
+Foreign_longline_gillnet,ForLLGN,0,0.902673355,0,0,0,0,1,1,1,1

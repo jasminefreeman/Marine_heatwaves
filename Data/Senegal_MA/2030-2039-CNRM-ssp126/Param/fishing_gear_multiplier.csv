@@ -1,0 +1,13 @@
+Gear_name,Gear_code,Multiplier_to_be_applied_to_activity
+Small_scale_gill_encircle_nets,SSEN,1
+Small_scale_line_fishing,SSLF,1
+Small_scale_seine_nets,SSSN,1
+Small_scale_inshore_gears,SSIG,1
+SenGam_bottom_trawlers,SenBT,1
+Foreign_bottom_trawlers,ForBT,1
+SenGam_pole_and_line,SGPL,1
+Foreign_pole_and_line,ForPL,1
+SenGam_pelagic_trawl_seine,SGPTS,1
+Foreign_pelagic_trawl_seine,ForPTS,1
+SenGam_longline_gillnet,SGLLGN,1
+Foreign_longline_gillnet,ForLLGN,1

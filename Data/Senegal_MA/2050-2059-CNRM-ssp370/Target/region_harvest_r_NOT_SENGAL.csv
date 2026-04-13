@@ -1,0 +1,11 @@
+Group,Regional_harvest_ratio,Comments
+Planktivorous_fish,3.692000E-03,Harvest_ratio_from_Cook_et_al_Ghana_stock_assessments_for_CI_G_T_B
+Demersal_fish,5.712000E-03,Harvest_ratio_from_Cook_et_al_Ghana_stock_assessments_for_CI_G_T_B
+Migratory_fish,0.000000E+00,No_data_yet
+Benthos_susp-dep,0.000000E+00,No_data_yet
+Benthos_carn-scav,5.000000E-04,Guess_at_harvest_ratio_for_shrimps
+Zooplankton_carn,5.000000E-04,Guess_at_harvest_ratio_for_squid
+Birds,0.000000E+00,No_data_yet
+Pinnipeds,0.000000E+00,No_data_yet
+Cetaceans,0.000000E+00,No_data_yet
+Macrophytes,0.000000E+00,No_data_yet

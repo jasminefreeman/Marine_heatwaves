@@ -1,0 +1,13 @@
+Gear_name,Gear_code,Discardrate_PF,Discardrate_DF,Discardrate_MF,Discardrate_FDB,Discardrate_CSB,Discardrate_CZ,Discardrate_BD,Discardrate_SL,Discardrate_CT,Discardrate_KP
+Purse_Seine,PS,0,0.99990,0.04700,0,0,0,1,1,1,0
+Longlines,LL,0,0.99990,0.19470,0,0,0,1,1,1,0
+Illegal_longlines,ILL,0,0.99990,0.19470,0,0,0,1,1,1,0
+Otter_trawls,OT,0,0.12280,0,0,0,0,1,1,1,0
+Artisanal_handlines,HL,0,0,0,0,0,0,1,1,1,0
+Hand-gathering_and_pots,HP,0,0,0,0,0,0,1,1,1,0
+NA,NA,0,0,0,0,0,0,1,1,1,0
+NA,NA,0,0,0,0,0,0,1,1,1,0
+NA,NA,0,0,0,0,0,0,1,1,1,0
+NA,NA,0,0,0,0,0,0,1,1,1,0
+NA,NA,0,0,0,0,0,0,1,1,1,0
+NA,NA,0,0,0,0,0,0,1,1,1,0

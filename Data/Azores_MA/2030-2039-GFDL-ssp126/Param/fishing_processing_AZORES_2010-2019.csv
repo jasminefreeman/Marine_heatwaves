@@ -1,0 +1,13 @@
+﻿Gear_name,Gear_code,Propgutted_PF,Propgutted_DF,Propgutted_MF,Propgutted_FDB,Propguttede_CSB,Propgutted_CZ,Propgutted_BD,Propgutted_SL,Propgutted_CT,Propgutted_KP
+Bottom_longline,LLdem,0,0,0.005442489,0,0,0,0,0,0,0
+Pots_traps_harvesting,PTH,0,0,0,0,0,0,0,0,0,0
+Drifting_deepwater_longline,LLdrift,0,0,0.001379019,0,0,0,0,0,0,0
+Handline,HL,0,0,0.005442489,0,0,0,0,0,0,0
+Jigging,JIG,0,0,0,0,0,0,0,0,0,0
+Pelagic_longline_regional,LLpelR,0,0,0.477397923,0,0,0,0,0,0,0
+Pole_and_line,PoL,0,0,0,0,0,0,0,0,0,0
+Purse_seine,PS,0,0,0,0,0,0,0,0,0,0
+Pelagic_longline_mainland,LLpelM,0,0,0.49650673,0,0,0,0,0,0,0
+Pelagic_longline_foreign,LLpelF,0,0,0.469063516,0,0,0,0,0,0,0
+NA,NA,0,0,0,0,0,0,0,0,0,0
+NA,NA,0,0,0,0,0,0,0,0,0,0

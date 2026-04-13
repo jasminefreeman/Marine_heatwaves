@@ -1,0 +1,13 @@
+Gear_name,Gear_code,Propgutted_PF,Propgutted_DF,Propgutted_MF,Propgutted_FDB,Propguttede_CSB,Propgutted_CZ,Propgutted_BD,Propgutted_SL,Propgutted_CT,Propgutted_KP
+Small_scale_gill_encircle_nets,SSEN,0,0,0,0,0,0,0,0,0,0
+Small_scale_line_fishing,SSLF,0,0,0,0,0,0,0,0,0,0
+Small_scale_seine_nets,SSSN,0,0,0,0,0,0,0,0,0,0
+Small_scale_inshore_gears,SSIG,0,0,0,0,0,0,0,0,0,0
+SenGam_bottom_trawlers,SenBT,0,0.25,0.25,0,0,0,0,0,0,0
+Foreign_bottom_trawlers,ForBT,0,0.25,0.25,0,0,0,0,0,0,0
+SenGam_pole_and_line,SGPL,0,0.25,0.25,0,0,0,0,0,0,0
+Foreign_pole_and_line,ForPL,0,0.25,0.25,0,0,0,0,0,0,0
+SenGam_pelagic_trawl_seine,SGPTS,0,0,0,0,0,0,0,0,0,0
+Foreign_pelagic_trawl_seine,ForPTS,0,0,0,0,0,0,0,0,0,0
+SenGam_longline_gillnet,SGLLGN,0,0.25,0.25,0,0,0,0,0,0,0
+Foreign_longline_gillnet,ForLLGN,0,0.25,0.25,0,0,0,0,0,1,0

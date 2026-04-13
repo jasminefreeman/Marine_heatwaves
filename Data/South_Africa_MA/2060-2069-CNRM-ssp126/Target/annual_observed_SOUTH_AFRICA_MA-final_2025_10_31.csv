@@ -1,0 +1,87 @@
+"Annual_measure","SD_of_measure","Use1_0","Name","Units","Description","Region","Time_period","Source"
+16690.9057,1669.09057,1,"Obs_TAPP","mMN/m2/y","Annual_total_primary_production","Southern_Benguela","1978-2015","Shannon et al. 2020"
+NA,NA,0,"Obs_NP","mMN/m2/y","Annual_new_production_from_depth_integrated_nitrate_plus_summer_river_and_atmos_inputs",NA,NA,"Insufficient_data"
+NA,NA,0,"Obs_KelpP","gC/m2/y","Annual_WITHIN_FOREST_NET_production_of_macrophytes",NA,NA,"Insufficient_data"
+1991.669182,1493.751887,1,"Obs_OmnizooP","mMN/m2/y","Annual_ominiv_zooplankton_gross_production","Southern_Benguela","1978-2015","Shannon et al. 2020"
+53.41861634,40.06396226,1,"Obs_CarnzooP","mMN/m2/y","Annual_carnivorous_zooplankton_gross_production","Southern_Benguela","1978-2015","Shannon et al. 2020"
+70.53194717,52.89896038,0,"Obs_PFishP","mMN/m2/y","Annual_planktivorous_fish_gross_production","Southern_Benguela","1978-2015","Shannon et al. 2020"
+17.67972327,13.25979245,1,"Obs_DFishP","mMN/m2/y","Annual_demersal_fish_gross_production","Southern_Benguela","1978-2015","Shannon et al. 2020"
+56.1375,42.1375,1,"Obs_BensuspP","mMN/m2/y","Annual_susp/dep_benthos_gross_production","Southern_Benguela","1978-2015","Shannon et al. 2020"
+1.7449,1.3687,1,"Obs_BencarnP","mMN/m2/y","Annual_carn/scan_benthos_gross_production","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.03,0.0225,1,"Obs_birdP","mMN/m2/y","Annual_net_production_of_birds","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.0836,0.0627,1,"Obs_sealP","mMN/m2/y","Annual_net_production_of_pinnipeds","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.0313,0.0235,1,"Obs_cetaP","mMN/m2/y","Annual_net_production_of_cetaceans","Southern_Benguela","1978-2015","Shannon et al. 2020"
+NA,NA,0,"Obs_maxbenthslar",NA,"Annual_monthly_max_conc_of_benthos_susp/dep_larvae",NA,NA,"Insufficient_data"
+NA,NA,0,"Obs_maxbenthclar",NA,"Annual_monthly_max_conc_of_benthos_carn/scav_larvae",NA,NA,"Insufficient_data"
+35.59925547,26.6994416,1,"Obs_Conpfishfish","mMN/m2/y","Annual_consumption_of_planktivorous_fish_by_fish","Southern_Benguela","1978-2015","Shannon et al. 2020"
+9.010977671,6.758233253,1,"Obs_Condfishfish","mMN/m2/y","Annual_consumption_of_demersal_fish_by_fish","Southern_Benguela","1978-2015","Shannon et al. 2020"
+504.8725785,378.6544339,1,"Obs_Conzoofish","mMN/m2/y","Annual_consumption_of_omniv_zooplankton_by_fish_and_fish_larvae","Southern_Benguela","1978-2015","Shannon et al. 2020"
+8.911949684,6.683962263,0,"Obs_Conzoocarnz","mMN/m2/y","Annual_consumption_of_omniv_zooplankton_by_carn_zooplankton","Southern_Benguela","1978-2015","Shannon et al. 2020"
+18.8512,14.1384,1,"Obs_Conbenfish","mMN/m2/y","Annual_consumption_of_benthos_by_fish","Southern_Benguela","1978-2015","Shannon et al. 2020"
+7.441362,5.5810215,1,"Obs_Contotal_bird","mMN/m2/y","Annual_food_consumption_by_birds","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.450416667,0.3378125,1,"Obs_Proppfishbird","dimensionless","Proportion_planktivorous_fish_in_diet_of_birds","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.101543333,0.0761575,1,"Obs_Propdfishbird","dimensionless","Proportion_demersal_fish_in_diet_of_birds","Southern_Benguela","1978-2015","Shannon et al. 2020"
+NA,NA,0,"Obs_Propmfishbird","dimensionless","Proportion_migratory_fish_in_diet_of_birds","Southern_Benguela","1978-2015","Shannon et al. 2020"
+NA,NA,0,"Obs_Propdiscbird",NA,"Proportion_discards_in_diet_of_birds",NA,NA,"Insufficient_data"
+2.567698,1.9257735,1,"Obs_Contotal_seal","mMN/m2/y","Annual_food_consumption_by_pinnipeds","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.319,0.239,1,"Obs_Proppfishseal","dimensionless","Proportion_planktivorous_fish_in_diet_of_pinnipeds","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.396,0.297,1,"Obs_Propdfishseal","dimensionless","Proportion_demersal_fish_in_diet_of_pinnipeds","Southern_Benguela","1978-2015","Shannon et al. 2020"
+NA,NA,0,"Obs_Propmfishseal","dimensionless","Proportion_migratory_fish_in_diet_of_pinnipeds","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.83,0.6225,1,"Obs_Contotal_ceta","mMN/m2/y","Annual_food_consumption_by_cetaceans","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.46,0.345,1,"Obs_Proppfishceta","dimensionless","Proportion_planktivorous_fish_in_diet_of_cetaceans","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.316,0.237,1,"Obs_Propdfishceta","dimensionless","Proportion_demersal_fish_in_diet_of_cetaceans","Southern_Benguela","1978-2015","Shannon et al. 2020"
+NA,NA,0,"Obs_Propmfishceta","dimensionless","Proportion_migratory_fish_in_diet_of_cetaceans","Southern_Benguela","1978-2015","Shannon et al. 2020"
+3.635080455,0.3635080455,1,"Obs_Pland_livewt","mMN/m2/y","Annual_planktivorous_fish_landings_(live_weight)","Southern_Benguela","2010-2019","Seas_Around_Us"
+0.820062644,0.0820062644,1,"Obs_Dland_livewt","mMN/m2/y","Annual_demersal_fish_landings_(live_weight)","Southern_Benguela","2010-2019","Seas_Around_Us"
+0.105713905,0.0105713905,1,"Obs_Mland_livewt","mMN/m2/y","Annual_migratory_fish_landings_(live_weight)","Southern_Benguela","2010-2019","Seas_Around_Us"
+0.002338715,0.0002338715,1,"Obs_Bsland_livewt","mMN/m2/y","Annual_susp/dep_benthos_landings_(live_weight)","Southern_Benguela","2010-2019","Seas_Around_Us"
+0.012518911,0.0012518911,1,"Obs_Bcland_livewt","mMN/m2/y","Annual_carn/scav_benthos_landings_(live_weight)","Southern_Benguela","2010-2019","Seas_Around_Us"
+0.004311344,0.0004311344,1,"Obs_Zcland_livewt","mMN/m2/y","Annual_carn_zooplankton_landings_(live_weight)","Southern_Benguela","2010-2019","Seas_Around_Us"
+NA,NA,0,"Obs_Kland_livewt","mMN/m2/y","Annual_macrophyte_landings_(live_weight)","Southern_Benguela","2010-2019","Seas_Around_Us"
+NA,NA,0,"Obs_kelp_pb","/y","Annual_CARBON_gross_PB_ratio_of_macrophytes",NA,NA,"Insufficient_data"
+NA,NA,0,"Obs_benslar_pb",NA,"Annual_gross_PB_ratio_larvae_of_susp/dep_benthos",NA,NA,"Insufficient_data"
+NA,NA,0,"Obs_benclar_pb",NA,"Annual_gross_PB_ratio_larvae_of_carn/scav_benthos",NA,NA,"Insufficient_data"
+1.696,1.272,1,"Obs_bens_pb","/y","Annual_gross_PB_ratio_susp/dep_feeding_benthos","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.937,0.7028,1,"Obs_benc_pb","/y","Annual_gross_PB_ratio_carn/scav_feeding_benthos","Southern_Benguela","1978-2015","Shannon et al. 2020"
+63.87160145,47.90370109,1,"Obs_omni_pb","/y","Annual_gross_PB_ratio_omniv_zooplankton","Southern_Benguela","1978-2015","Shannon et al. 2020"
+30,22.5,1,"Obs_carn_pb","/y","Annual_gross_PB_ratio_carniv_zooplankton","Southern_Benguela","1978-2015","Shannon et al. 2020"
+NA,NA,0,"Obs_fishplar_pb",NA,"Annual_gross_PB_ratio_larvae_of_planktivorous_fish",NA,NA,"Insufficient_data"
+NA,NA,0,"Obs_fishdlar_pb",NA,"Annual_gross_PB_ratio_larvae_of_demersal_fish",NA,NA,"Insufficient_data"
+1.213636045,0.910227034,0,"Obs_fishp_pb","/y","Annual_gross_PB_ratio_planktivorous_fish","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.970969119,0.728226839,1,"Obs_fishd_pb","/y","Annual_gross_PB_ratio_demersal_fish","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.47,0.3525,1,"Obs_fishm_pb","/y","Annual_gross_PB_ratio_migratory_fish","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.119,0.0892,1,"Obs_bird_pb","/y","Annual_net_PB_ratio_birds","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.25,0.1875,1,"Obs_seal_pb","/y","Annual_net_PB_ratio_pinnipeds","Southern_Benguela","1978-2015","Shannon et al. 2020"
+0.15,0.1125,1,"Obs_ceta_pb","/y","Annual_net_PB_ratio_cetaceans","Southern_Benguela","1978-2015","Shannon et al. 2020"
+NA,NA,0,"Obs_exud_C_kelp","dimensionless","Annual_average_proportion_of_macrophyte_C_uptake_which_is_exuded",NA,NA,NA
+NA,NA,0,"Obs_kelp_NC","dimensionless","Annual_average_molar_NC_ratio_of_macrophytes",NA,NA,NA
+NA,NA,0,"Obs_Denitrif","mMN/m2/y","Annual_denitrification",NA,NA,NA
+NA,NA,0,"Obs_Dfdiscardp","dimensionless","Proportion_of_demersal_fish_catch_discarded",NA,NA,NA
+NA,NA,0,"Obs_s_x_ammonia","mMN/m3","Annual_average_ammonia_conc_in_porewater_of_sand_gs_0.25mm",NA,NA,NA
+NA,NA,0,"Obs_d_x_ammonia","mMN/m3","Annual_average_ammonia_conc_in_porewater_of_mud_gs_0.12mm",NA,NA,NA
+NA,NA,0,"Obs_s_x_nitrate","mMN/m3","Annual_average_nitrate_conc_in_porewater_of_sand_gs_0.25mm",NA,NA,NA
+NA,NA,0,"Obs_d_x_nitrate","mMN/m3","Annual_average_nitrate_conc_in_porewater_of_mud_gs_0.12mm",NA,NA,NA
+NA,NA,0,"Obs_s_x_TON","%N(gN/g_dry_sed)","Annual_average_organic_N_content_of_sand_gs_0.25mm_(0.19-0.43mm)",NA,NA,NA
+NA,NA,0,"Obs_d_x_TON","%N(gN/g_dry_sed)","Annual_average_organic_N_content_of_mud_gs_0.12mm_(0.03-0.07mm)",NA,NA,NA
+0.585890614,0.585890614,0,"Obs_NDJF_s_chl","mg/m3","Average_winter_(Nov-Feb)_chlorophyll_conc_shallow_layer","Bengulea_model_area","2010-2019","Copernicus remote sensing data from OCEANCOLOUR_GLO_BGC_L4_MY_009_104_assuming_Redfield_CN"
+0.618972672,0.618972672,0,"Obs_MJJA_s_chl","mg/m3","Average_summer_(May-Aug)_chlorophyll_conc_shallow_layer","Benguela_Sea_model_area","2010-2019","Copernicus remote sensing data from OCEANCOLOUR_GLO_BGC_L4_MY_009_104_assuming_Redfield_CN"
+6.190466187,8.673268371,1,"Obs_NDJF_s_nitrate","mMN/m3","Average_winter_(Nov-Feb)_nitrate_conc_shallow_layer",NA,NA,NA
+6.543676315,8.70925482,1,"Obs_MJJA_s_nitrate","mMN/m3","Average_summer_(May-Aug)_nitrate_conc_shallow_layer",NA,NA,NA
+7.227404249,8.837850863,1,"Obs_NDJF_d_nitrate","mMN/m3","Average_winter_(Nov-Feb)_nitrate_conc_deep_layer",NA,NA,NA
+5.294290221,8.41868308,1,"Obs_MJJA_d_nitrate","mMN/m3","Average_summer_(May-Aug)_nitrate_conc_deep_layer",NA,NA,NA
+NA,NA,0,"Obs_NDJF_s_ammonia","mMN/m3","Average_winter_(Nov-Feb)_ammonia_conc_shallow_layer",NA,NA,NA
+NA,NA,0,"Obs_MJJA_s_ammonia","mMN/m3","Average_summer_(May-Aug)_ammonia_conc_shallow_layer",NA,NA,NA
+NA,NA,0,"Obs_NDJF_d_ammonia","mMN/m3","Average_winter_(Nov-Feb)_ammonia_conc_deep_layer",NA,NA,NA
+NA,NA,0,"Obs_MJJA_d_ammonia","mMN/m3","Average_summer_(May-Aug)_ammonia_conc_deep_layer",NA,NA,NA
+NA,NA,0,"Obs_carn_io_ratio","dimensionless","Inshore_offshore_ratio_of_annual_mean_carnzoo_depth_av_conc",NA,NA,NA
+NA,NA,0,"Obs_omni_io_ratio","dimensionless","Inshore_offshore_ratio_of_annual_mean_omnivzoo_depth_av_conc",NA,NA,NA
+NA,NA,0,"Obs_phyt_io_ratio","dimensionless","Inshore_offshore_ratio_of_annual_mean_phyt_surface_layer_conc",NA,NA,NA
+NA,NA,0,"Obs_nit_io_ratio","dimensionless","Inshore_offshore_ratio_of_annual_mean_nitrate_surface_layer_conc",NA,NA,NA
+NA,NA,0,"Obs_amm_io_ratio","dimensionless","Inshore_offshore_ratio_of_annual_mean_ammonia_surface_layer_conc",NA,NA,NA
+NA,NA,0,"Obs_pfish_io_ratio","dimensionless","Inshore_offshore_ratio_of_annual_mean_planktivorous_fish_density_per_m2",NA,NA,NA
+NA,NA,0,"Obs_dfish_io_ratio","dimensionless","Inshore_offshore_ratio_of_annual_mean_demersal_fish_density_per_m2",NA,NA,NA
+7.09e-06,3.5e-06,1,"Obs_birddisc","mMN/m2/y","Annual_bycatch_of_birds","Southern_Benguela","2010-2019","Seas_Around_Us"
+0,0,0,"Obs_sealdisc","mMN/m2/y","Annual_bycatch_of_pinnipeds","Southern_Benguela","2010-2019","Seas_Around_Us"
+0,0,0,"Obs_cetadisc","mMN/m2/y","Annual_bycatch_of_cetaceans","Southern_Benguela","2010-2019","Seas_Around_Us"
+NA,NA,0,"Obs_kelp_beachcast","dimensionless","Proportion_of_macrophyte_annual_nitrogen_uptake_exported_as_beachcast",NA,NA,NA
+NA,NA,0,"Obs_Ctland_livewt","mMN/m2/y","Obs_cetacean_landings_by_whale_hunters",NA,NA,NA

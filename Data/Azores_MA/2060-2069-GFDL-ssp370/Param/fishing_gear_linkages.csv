@@ -1,0 +1,13 @@
+Gear_id,Gear_name,Gear_to_which_linked,Linkage_coefficient,Comments
+1,Bottom_longline,3,1,Linked to pelagic longlines
+2,Pots_traps_harvesting,4,1,Linked to other inshore activity
+3,Drifting_deepwater_longline,1,1,Linked to bottom longline
+4,Handline,5,1,Linked to jigging
+5,Jigging,4,1,Linked to handlines
+6,Pelagic_longline_regional,10,1,Linked to mainland longline
+7,Pole_and_line,6,1,Linked to regional longline
+8,Purse_seine,6,1,Linked to regional longline
+9,Pelagic_longline_mainland,6,1,Linked to regional longline
+10,Pelagic_longline_foreign,6,1,Linked to regional longline
+11,NA,NA,NA,NA
+12,NA,NA,NA,NA

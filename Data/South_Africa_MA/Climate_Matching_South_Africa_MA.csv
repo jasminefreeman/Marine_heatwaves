@@ -1,0 +1,54 @@
+"Driver","Longname","Driver.Type","Grouping"
+"sslight","Sea Surface Light","Physics",1
+"so_logespm","Shallow Offshore Suspended Particulate Matter","Physics",0
+"si_logespm","Shallow Inshore Suspended Particulate Matter","Physics",0
+"so_temp","Shallow Offshore temperature","Physics",2
+"d_temp","Deep temperature","Physics",2
+"si_temp","Shallow Inshore temperature","Physics",2
+"rivervol","River volume","Physics",3
+"logkvert","log k vertical","Physics",4
+"mixlscale","Mixed layer scale","Physics",0
+"d_so_upwelling","Deep Shallow Offshore upwelling","Physics",4
+"so_d_downwelling","Shallow Offshore deep downwelling","Physics",4
+"so_inflow","Shallow Offshore inflow","Physics",5
+"d_inflow","Deep inflow","Physics",5
+"si_inflow","Shallow Inshore inflow","Physics",5
+"si_outflow","Shallow Inshore outflow","Physics",5
+"so_si_flow","Shallow Offshore to Shallow Inshore flow","Physics",5
+"s1_pdist","Habitat Disturbance (s1)","Physics",0
+"s2_pdist","Habitat Disturbance (s2)","Physics",0
+"s3_pdist","Habitat Disturbance (s3)","Physics",0
+"d1_pdist","Habitat Disturbance (d1)","Physics",0
+"d2_pdist","Habitat Disturbance (d2)","Physics",0
+"d3_pdist","Habitat Disturbance (d3)","Physics",0
+"Inshore_waveheight","Inshore wave height","Physics",4
+"DO_logkvert","Deep Offshore log k vertical","Physics",4
+"DO_mixlscale","Deep Offshore mixed layer scale","Physics",0
+"DO_d_upwelling","Deep Offshore deep upwelling","Physics",4
+"d_DO_downwelling","Deep deep downwelling","Physics",4
+"so_nitrate","Shallow Offshore nitrate","Chemistry",6
+"so_ammonia","Shallow Offshore ammonia","Chemistry",6
+"so_phyt","Shallow Offshore phytoplankton","Chemistry",6
+"so_detritus","Shallow Offshore detritus","Chemistry",6
+"d_nitrate","Deep nitrate","Chemistry",6
+"d_ammonia","Deep ammonia","Chemistry",6
+"d_phyt","Deep phytoplankton","Chemistry",6
+"d_detritus","Deep detritus","Chemistry",6
+"si_nitrate","Shallow Inshore nitrate","Chemistry",6
+"si_ammonia","Shallow Inshore ammonia","Chemistry",6
+"si_phyt","Shallow Inshore phytoplankton","Chemistry",6
+"si_detritus","Shallow Inshore detritus","Chemistry",6
+"rivnitrate","River nitrate","Chemistry",3
+"rivammonia","River ammonia","Chemistry",3
+"rivdetritus","River detritus","Chemistry",3
+"so_atmnitrate","Shallow Offshore atmospheric nitrate flux","Chemistry",7
+"so_atmammonia","Shallow Offshore atmospheric ammonia flux","Chemistry",7
+"si_atmnitrate","Shallow Inshore atmospheric nitrate flux","Chemistry",7
+"si_atmammonia","Shallow Inshore atmospheric ammonia flux","Chemistry",7
+"si_othernitrate","Shallow Inshore other nitrate flux","Chemistry",0
+"si_otherammonia","Shallow Inshore other ammonia flux","Chemistry",0
+"so_othernitrate","Shallow Offshore other nitrate flux","Chemistry",0
+"so_otherammonia","Shallow Offshore other ammonia flux","Chemistry",0
+"DO_nitrate","Deep Offshore nitrate","Chemistry",6
+"DO_ammonia","Deep Offshore ammonia","Chemistry",6
+"DO_detritus","Deep Offshore detritus","Chemistry",6

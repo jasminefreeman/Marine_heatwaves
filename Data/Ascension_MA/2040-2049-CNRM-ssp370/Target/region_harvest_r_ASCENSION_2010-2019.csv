@@ -1,0 +1,11 @@
+Group,Regional_harvest_ratio,Comments
+Planktivorous_fish,0,Unknown for_the_ASCENSION
+Demersal_fish,1.3185e-6,ASCENSION_DATA_Catches_per_estimated_biomass
+Migratory_fish,6.121546213751924e-5,ASCENSION_DATA_Catches_per_estimated_biomass
+Benthos_susp-dep,0,Unknown for_the_ASCENSION
+Benthos_carn-scav,0,Unknown for_the_ASCENSION
+Zooplankton_carn,0,Guess_at_harvest_ratio_for_squid
+Birds,1.2588e-6,ASCENSION_Rough_estimate_for_harvest_ratio_from_synthesis_of_bycatch_data
+Pinnipeds,0,Unknown for_the_ASCENSION
+Cetaceans,0,Unknown for_the_ASCENSION
+Macrophytes,0,Unknown for_the_ASCENSION
