@@ -3,8 +3,8 @@ library(furrr)
 library(progressr)
 library(StrathE2E2)
 
-
-data <- readRDS("./Objects/Experiment_results_reduced_cols_with_base_combined.rds")
+region_name <- "Norwegian_Basin_MA"
+data <- readRDS(paste0("./Objects/4.Experiment_results_reduced_cols_with_base_combined_", region_name, ".rds"))
 
 # copy data into a new dataframe
 diff <- data
@@ -47,14 +47,14 @@ diff_only <- diff %>%
 
 # difference only file 
 
-write.csv(diff_only, "./Objects/Diff_btw_base_&_exp.csv", row.names = FALSE)
+write.csv(diff_only, paste0("./Objects/5.Diff_btw_base_&_exp_", region_name, ".rds"))
 
-saveRDS(diff_only, "./Objects/Diff_btw_base_&_exp.rds")
-check <- readRDS("./Objects/Diff_btw_base_&_exp.rds")
+saveRDS(diff_only, paste0("./Objects/5.Diff_btw_base_&_exp_", region_name, ".rds"))
+check <- readRDS(paste0("./Objects/5.Diff_btw_base_&_exp_", region_name, ".rds"))
 
 # big datafile with base, experiment outputs and the difference between the two 
 
-write.csv(diff, "./Objects/All_data__base_exp_&_diff.csv", row.names = FALSE)
+write.csv(diff, paste0("./Objects/6.All_data__base_exp_&_diff_", region_name, ".csv"))
 
-saveRDS(diff, "./Objects//All_data__base_exp_&_diff.rds")
-check <- readRDS("./Objects//All_data__base_exp_&_diff.rds")
+saveRDS(diff, paste0("./Objects/6.All_data__base_exp_&_diff_", region_name, ".rds"))
+check <- readRDS(paste0("./Objects/6.All_data__base_exp_&_diff_", region_name, ".rds"))
