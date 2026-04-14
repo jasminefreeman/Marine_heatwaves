@@ -7,18 +7,23 @@ library(ggpattern)
 # load in data 
 # using the big combined file of everything for now whilst the no of columns is small
 
-region_name <- "Norwegian_Basin_MA"
+region_name <- "Brazilian_Shelf_MA"
 data <- readRDS(paste0("./Objects/7.All_data_species_narrowed_", region_name, ".rds"))
+
 
 ####-- define parameters --####
 
 # this is where  change what you want to look at 
 selected_guild <- "Birds"
 selected_temps <- c(-2, 0, 3, 5)
-selected_months <- c(1:6) #7:12 # for plot1:faceted by month
-selected_month <- 3 #for plot2: faceted by guild
+selected_months <- c(1:6) #1:6 or 7:12 to split for a 6 month view 
+selected_month <- 12 #for plot2: faceted by guild
+xlim_plot2 <- c(361, 1440) # c(361, 1440)  or   c(1441, 2880)
 
-## -- plot 1: 1 guild, faceted by month -- ##
+# extra line needed to keep plot 1 hidden whilst generating plot 2's
+
+
+####-- plot 1: 1 guild, faceted by month --####
 
 # this calculates the heatwave window (the little yellow line on the plots)
 hw_windows_plot1 <- data %>% 
@@ -60,9 +65,9 @@ plot1 <- selection_plot1 %>%
 
 plot1
 
-ggsave("Birds_1-6.png", plot = plot1, dpi = 300, width = 12, height = 8)
+ggsave(paste0(region_name, "_", "TS_plot1_", selected_guild, "_months", min(selected_months), "_", max(selected_months), ".png"), plot = plot1, dpi = 300, width = 12, height = 8)
 
-##-- plot2: faceted by guild --##
+####-- plot2: faceted by guild --####
 
 # this calculates the yellow HW bars on the plot
 hw_windows_plot2 <- data %>% 
@@ -96,11 +101,13 @@ plot2 <- selection_plot2 %>%
                      labels = paste0(0:10)) + 
   labs(x = "Year", y = "Abundance", 
        title = paste0("Heatwave month: ", month.abb[selected_month])) +
-  coord_cartesian(xlim = c(1441,2880)) + #c(361, 1440) - for start year 2 to end of year 4    #manually change this
+  coord_cartesian(xlim = xlim_plot2) + 
   scale_colour_gradient2(low = "blue", mid = "grey", high = "red", midpoint = 0, 
                          name = "Heatwave\nTemp (°C)", breaks = selected_temps) +
   theme_bw()
 
 plot2
 
-ggsave("Mar_HW_by_guild.png", plot = plot2, dpi = 300, width = 12, height = 8)
+ggsave(paste0(region_name, "_TS_plot_2", "_all_guilds_", month.abb[selected_month], 
+              "_yrs", floor(xlim_plot2[1]/360), "-", ceiling(xlim_plot2[2]/360),".png"), 
+       plot = plot2, dpi = 300, width = 12, height = 8)
