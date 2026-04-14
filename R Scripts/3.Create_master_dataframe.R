@@ -8,23 +8,23 @@ plan(multisession, workers = 4)
 ####-- load in the model runs --####
 
 # this loads in all of the Norwegian model runs
-Norwegian_Basin_files <- list.files("./Objects/Heatwaves/",
-                                    pattern = "^Norwegian",
+South_Africa_files <- list.files("./Objects/Heatwaves/",
+                                    pattern = "^South_Africa",
                                     full.names = T)
 
 with_progress({
-  Norwegian_Basin_data <- future_map(Norwegian_Basin_files, read_rds)})
+  South_Africa_data <- future_map(South_Africa_files, read_rds)})
 
 #this renames all the model runs inside Norwegian_Basin_files, to be called something easy
 #to identify, so that it's not showing as [[1]] : [[180]]
-names(Norwegian_Basin_data) <- basename(Norwegian_Basin_files)
+names(South_Africa_data) <- basename(South_Africa_files)
 
 ####-- combine together --####
 
 # this combines all of the daily time series data for all model runs into one
 # big data frame
 mass_combined <- imap_dfr(
-  Norwegian_Basin_data, 
+  South_Africa_data, 
   ~ as.data.frame(.x$output), 
   .id = "model_run")
 
@@ -77,7 +77,7 @@ final <- mass_combined3
 
 ####-- save the master data file --####
 
-region_name <- "Norwegian_Basin_MA"
+region_name <- "South_Africa_MA"
 
 write.csv(final, paste0("./Objects/1.Full_data_", region_name, ".csv"))
 

@@ -7,7 +7,7 @@ library(ggpattern)
 # load in data 
 # using the big combined file of everything for now whilst the no of columns is small
 
-region_name <- "Brazilian_Shelf_MA"
+region_name <- "South_Africa_MA"
 data <- readRDS(paste0("./Objects/7.All_data_species_narrowed_", region_name, ".rds"))
 
 
@@ -16,12 +16,12 @@ data <- readRDS(paste0("./Objects/7.All_data_species_narrowed_", region_name, ".
 # this is where  change what you want to look at 
 selected_guild <- "Birds"
 selected_temps <- c(-2, 0, 3, 5)
-selected_months <- c(1:6) #1:6 or 7:12 to split for a 6 month view 
+selected_months <- c(7:12) #1:6 or 7:12 to split for a 6 month view 
 selected_month <- 12 #for plot2: faceted by guild
 xlim_plot2 <- c(361, 1440) # c(361, 1440)  or   c(1441, 2880)
 
-# extra line needed to keep plot 1 hidden whilst generating plot 2's
 
+# extra line needed to keep plot 1 hidden whilst generating plot 2's
 
 ####-- plot 1: 1 guild, faceted by month --####
 
@@ -57,7 +57,7 @@ plot1 <- selection_plot1 %>%
              colour = "black", linewidth = 0.5, alpha = 0.5) +
   scale_x_continuous(breaks = seq(0, 3600, by = 360), 
                      labels = paste0(0:10)) + 
-  labs( x = "Year", y = "Abundance", title = selected_guild) +
+  labs( x = "Year", y = "Abundance", title = paste0(region_name, " | " , selected_guild)) +
   coord_cartesian(xlim = c(361, 1440)) + # limits to just to year 2, 3, 4 & 5    #manually change this
   scale_colour_gradient2(low = "blue", mid = "grey", high = "red", midpoint = 0, 
                          name = "Heatwave\nTemp (°C)", breaks = c(-2, 0, 3, 5))+
@@ -100,7 +100,7 @@ plot2 <- selection_plot2 %>%
   scale_x_continuous(breaks = seq(0, 3600, by = 360), 
                      labels = paste0(0:10)) + 
   labs(x = "Year", y = "Abundance", 
-       title = paste0("Heatwave month: ", month.abb[selected_month])) +
+       title = paste0(region_name, " | ", "Heatwave month:", month.abb[selected_month])) +
   coord_cartesian(xlim = xlim_plot2) + 
   scale_colour_gradient2(low = "blue", mid = "grey", high = "red", midpoint = 0, 
                          name = "Heatwave\nTemp (°C)", breaks = selected_temps) +

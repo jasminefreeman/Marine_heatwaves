@@ -3,7 +3,7 @@ library(furrr)
 library(progressr)
 library(StrathE2E2)
 
-region_name <- "Norwegian_Basin_MA"
+region_name <- "South_Africa_MA"
 data <- readRDS(paste0("./Objects/4.Experiment_results_reduced_cols_with_base_combined_", region_name, ".rds"))
 
 # copy data into a new dataframe

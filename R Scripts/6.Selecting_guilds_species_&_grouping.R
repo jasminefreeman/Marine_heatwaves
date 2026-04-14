@@ -7,19 +7,22 @@ library(ggpattern)
 # load in data 
 # using the big combined file of everything for now whilst the no of columns is small
 
-region_name <- "Norwegian_Basin_MA"
+region_name <- "South_Africa_MA"
 data <- readRDS(paste0("./Objects/6.All_data__base_exp_&_diff_", region_name, ".rds"))
 
 # only selecting the columns i want for now to make it easier to work with
+
+# if the region is in the southern hemisphere, make the seasons back to front!!!
+
 data_small <- data %>% 
   select(
     region, hw_month, hw_temp, time, year, yearday, hw_start.x, hw_end.x,
     matches("^phyt|omni|carn|fishp|bird")) %>% 
   mutate(season = case_when(
-    hw_month %in% c(12, 1, 2) ~ "Winter",
-    hw_month %in% c(3, 4, 5) ~ "Spring",
-    hw_month %in% c(6, 7, 8) ~ "Summer", 
-    hw_month %in% c(9, 10, 11) ~ "Autumn")) %>% 
+    hw_month %in% c(12, 1, 2) ~ "Summer",
+    hw_month %in% c(3, 4, 5) ~ "Autumn",
+    hw_month %in% c(6, 7, 8) ~ "Winter", 
+    hw_month %in% c(9, 10, 11) ~ "Spring")) %>% 
   mutate(season = factor(season, 
                          levels = c("Spring", "Summer", "Autumn", "Winter")))
 

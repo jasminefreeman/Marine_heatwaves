@@ -5,7 +5,7 @@ library(StrathE2E2)
 
 ####-- read in the data --####
 
-region_name <- "Norwegian_Basin_MA"
+region_name <- "South_Africa_MA"
 data <- readRDS(paste0("./Objects/1.Full_data_", region_name, ".rds"))
 
 ## getting rid of columns i don't need/want right now 
@@ -40,7 +40,7 @@ new <- df %>%
 
 testplot <- new %>% 
   ggplot(aes(x = time, 
-             y = phyt_so,
+             y = fishp_i,
              colour = hw_temp.x,
              group = hw_temp.x)) +
           geom_line()
