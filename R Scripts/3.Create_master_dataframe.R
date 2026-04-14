@@ -77,8 +77,10 @@ final <- mass_combined3
 
 ####-- save the master data file --####
 
-write.csv(final, "./Objects/Full_data.csv", row.names = FALSE)
+region_name <- "Norwegian_Basin_MA"
 
-saveRDS(final, "./Objects/Full_data.rds")
-check <- readRDS("./Objects/Full_data.rds")
+write.csv(final, paste0("./Objects/1.Full_data_", region_name, ".csv"))
+
+saveRDS(final, paste0("./Objects/1.Full_data_", region_name, ".rds"))
+check <- readRDS(paste0("./Objects/1.Full_data_", region_name, ".rds"))
 
