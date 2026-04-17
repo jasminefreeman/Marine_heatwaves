@@ -8,23 +8,23 @@ plan(multisession, workers = 4)
 ####-- load in the model runs --####
 
 # this loads in all of the Norwegian model runs
-South_Africa_files <- list.files("./Objects/Heatwaves/",
-                                    pattern = "^South_Africa",
+Senegal_files <- list.files("./Objects/Heatwaves/",
+                                    pattern = "^Senegal",
                                     full.names = T)
 
 with_progress({
-  South_Africa_data <- future_map(South_Africa_files, read_rds)})
+  Senegal_data <- future_map(Senegal_files, read_rds)})
 
 #this renames all the model runs inside Norwegian_Basin_files, to be called something easy
 #to identify, so that it's not showing as [[1]] : [[180]]
-names(South_Africa_data) <- basename(South_Africa_files)
+names(Senegal_data) <- basename(Senegal_files)
 
 ####-- combine together --####
 
 # this combines all of the daily time series data for all model runs into one
 # big data frame
 mass_combined <- imap_dfr(
-  South_Africa_data, 
+  Senegal_data, 
   ~ as.data.frame(.x$output), 
   .id = "model_run")
 
@@ -77,9 +77,9 @@ final <- mass_combined3
 
 ####-- save the master data file --####
 
-region_name <- "South_Africa_MA"
+region_name <- "Senegal_MA"
 
-write.csv(final, paste0("./Objects/1.Full_data_", region_name, ".csv"))
+#write.csv(final, paste0("./Objects/1.Full_data_", region_name, ".csv"))
 
 saveRDS(final, paste0("./Objects/1.Full_data_", region_name, ".rds"))
 check <- readRDS(paste0("./Objects/1.Full_data_", region_name, ".rds"))

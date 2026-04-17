@@ -5,7 +5,7 @@ library(StrathE2E2)
 
 ####-- read in the data --####
 
-region_name <- "South_Africa_MA"
+region_name <- "Senegal_MA"
 data <- readRDS(paste0("./Objects/1.Full_data_", region_name, ".rds"))
 
 ## getting rid of columns i don't need/want right now 
@@ -99,21 +99,21 @@ ggplot(plot_df_long, aes(x = time, y = value, colour = type)) +
 
 ####-- save out the file that contains the base only --####
 
-write.csv(new_renamed_cols, paste0("./Objects/2.Base_data_reduced_cols_", region_name, ".csv"))
+#write.csv(new_renamed_cols, paste0("./Objects/2.Base_data_reduced_cols_", region_name, ".csv"))
 
 saveRDS(new_renamed_cols, paste0("./Objects/2.Base_data_reduced_cols_", region_name, ".rds"))
-check <- readRDS(paste0("./Objects/2.Base_data_reduced_cols_", region_name, ".rds"))
+check1 <- readRDS(paste0("./Objects/2.Base_data_reduced_cols_", region_name, ".rds"))
 
 ####-- save out the experiment results with reduced columns --####
 
-write.csv(data, paste0("./Objects/3.Experiment_results_reduced_cols_", region_name, ".csv"))
+#write.csv(data, paste0("./Objects/3.Experiment_results_reduced_cols_", region_name, ".csv"))
 
 saveRDS(data, paste0("./Objects/3.Experiment_results_reduced_cols_", region_name, ".rds"))
-check <- readRDS(paste0("./Objects/3.Experiment_results_reduced_cols_", region_name, ".rds"))
+check2 <- readRDS(paste0("./Objects/3.Experiment_results_reduced_cols_", region_name, ".rds"))
 
 ####-- save out the combined file with experiment results and base --####
 
-write.csv(all_data_with_base, paste0("./Objects/4.Experiment_results_reduced_cols_with_base_combined_", region_name, ".csv"))
+#write.csv(all_data_with_base, paste0("./Objects/4.Experiment_results_reduced_cols_with_base_combined_", region_name, ".csv"))
 
 saveRDS(all_data_with_base, paste0("./Objects/4.Experiment_results_reduced_cols_with_base_combined_", region_name, ".rds"))
 check <- readRDS(paste0("./Objects/4.Experiment_results_reduced_cols_with_base_combined_", region_name, ".rds"))

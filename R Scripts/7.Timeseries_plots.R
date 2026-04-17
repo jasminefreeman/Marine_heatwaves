@@ -108,6 +108,8 @@ plot2 <- selection_plot2 %>%
 
 plot2
 
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
+
 ggsave(paste0(region_name, "_TS_plot_2", "_all_guilds_", month.abb[selected_month], 
               "_yrs", floor(xlim_plot2[1]/360), "-", ceiling(xlim_plot2[2]/360),".png"), 
        plot = plot2, dpi = 300, width = 12, height = 8)

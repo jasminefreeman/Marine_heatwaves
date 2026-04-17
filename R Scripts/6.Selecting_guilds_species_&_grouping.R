@@ -7,7 +7,7 @@ library(ggpattern)
 # load in data 
 # using the big combined file of everything for now whilst the no of columns is small
 
-region_name <- "South_Africa_MA"
+region_name <- "Senegal_MA"
 data <- readRDS(paste0("./Objects/6.All_data__base_exp_&_diff_", region_name, ".rds"))
 
 # only selecting the columns i want for now to make it easier to work with
@@ -50,7 +50,7 @@ data_grouped <- data_small %>%
 
 ##-- save out this filtered dataset -- ##
 
-write.csv(data_grouped, paste0("./Objects/7.All_data_species_narrowed_", region_name, ".rds"))
+#write.csv(data_grouped, paste0("./Objects/7.All_data_species_narrowed_", region_name, ".csv"))
 
 saveRDS(data_grouped, paste0("./Objects/7.All_data_species_narrowed_", region_name, ".rds"))
 check <- readRDS(paste0("./Objects/7.All_data_species_narrowed_", region_name, ".rds"))
