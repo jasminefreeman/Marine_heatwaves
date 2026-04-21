@@ -76,6 +76,11 @@ p1 <- EOY_anomoly_1yr_after %>%
 
 p1
 
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
+
+ggsave(paste0(region_name, "_EOY_1yr_post_hw_anomoly_abs_Plot", "_all_guilds_",".png"), 
+       plot = p1, dpi = 300, width = 12, height = 8)
+
 # scaled values 
 
 p2 <- EOY_anomoly_1yr_after %>% 
@@ -97,6 +102,11 @@ p2 <- EOY_anomoly_1yr_after %>%
 
 p2
 
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
+
+ggsave(paste0(region_name, "_EOY_1yr_post_hw_anomoly_scaled_Plot", "_all_guilds_",".png"), 
+       plot = p2, dpi = 300, width = 12, height = 8)
+
 ####-- plots to look at the system 24 months post heatwave --####
 
 # absolute values
@@ -116,6 +126,12 @@ p3 <- EOY_anomoly_2yr_after %>%
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 p3
+
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
+
+ggsave(paste0(region_name, "_EOY_2yr_post_hw_anomoly_abs_Plot", "_all_guilds_",".png"), 
+       plot = p3, dpi = 300, width = 12, height = 8)
+
 
 # scaled values 
 
@@ -138,6 +154,10 @@ p4 <- EOY_anomoly_2yr_after %>%
 
 p4
 
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
+
+ggsave(paste0(region_name, "_EOY_2yr_post_hw_anomoly_scaled_Plot", "_all_guilds_",".png"), 
+       plot = p4, dpi = 300, width = 12, height = 8)
 
 ####-- plots to look at the system 36 months post heatwave --####
 
@@ -158,6 +178,11 @@ p5 <- EOY_anomoly_3yr_after %>%
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 p5
+
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
+
+ggsave(paste0(region_name, "_EOY_3yr_post_hw_anomoly_abs_Plot", "_all_guilds_",".png"), 
+       plot = p5, dpi = 300, width = 12, height = 8)
 
 # scaled values 
 
@@ -180,6 +205,11 @@ p6 <- EOY_anomoly_3yr_after %>%
 
 p6
 
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
+
+ggsave(paste0(region_name, "_EOY_3yr_post_hw_anomoly_scaled_Plot", "_all_guilds_",".png"), 
+       plot = p6, dpi = 300, width = 12, height = 8)
+
 ####-- plots to look at the system 48 months post heatwave --####
 
 # absolute values
@@ -199,6 +229,11 @@ p7 <- EOY_anomoly_4yr_after %>%
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 p7
+
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
+
+ggsave(paste0(region_name, "_EOY_4yr_post_hw_anomoly_abs_Plot", "_all_guilds_",".png"), 
+       plot = p7, dpi = 300, width = 12, height = 8)
 
 # scaled values 
 
@@ -220,3 +255,9 @@ p8 <- EOY_anomoly_4yr_after %>%
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 p8
+
+
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
+
+ggsave(paste0(region_name, "_EOY_4yr_post_hw_anomoly_scaled_Plot", "_all_guilds_",".png"), 
+       plot = p8, dpi = 300, width = 12, height = 8)

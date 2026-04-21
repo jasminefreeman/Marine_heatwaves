@@ -24,6 +24,20 @@ peak_timing <- data %>%
               values_from = peak_time) %>% 
   mutate(timing_diff = base - experiment) # pos = advanced, neg = delayed
 
+
+
+### need to add something in here to see how the peak timing changes in each year ##
+
+
+
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
+
+ggsave(paste0(region_name, "_annual_peak_timing_shift_Plot", "_all_guilds_",".png"), 
+       plot = p1, dpi = 300, width = 12, height = 8)
+
+
+
+
 # maximum timing shift across all years 
 
 peak_timing_summary <- data %>%  
@@ -44,7 +58,7 @@ peak_timing_summary <- data %>%
 
 # plotting
 
-p1 <- peak_timing_summary %>% 
+p2 <- peak_timing_summary %>% 
   mutate(guild_group = factor(guild_group, levels = c("Phyto", "Omni_zoo", "Carn_zoo",
                                                       "Pfish_larvae", "Pfish", "Birds"))) %>%
   ggplot(aes(x = factor(hw_month), y = factor(hw_temp), fill = timing_diff)) +
@@ -58,9 +72,14 @@ p1 <- peak_timing_summary %>%
   theme_bw() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
-p1
+p2
 
 
 # orange = the hw has advanced the timing (event happens earlier than it would have without the hw) - DELAY
 
 # purple = the hw has delayed the timing (event happens later than it would without the hw) - ADVANCE
+
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
+
+ggsave(paste0(region_name, "_maximum_peak_timing_shift_Plot", "_all_guilds_",".png"), 
+       plot = p2, dpi = 300, width = 12, height = 8)

@@ -35,11 +35,14 @@ p1 <- EOS_anomoly %>%
   labs(x = "Heatwave month", y = "Heatwave temp (°C)",
        title = "End of simulation anomaly") +
   theme_bw() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 p1
 
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
 
+ggsave(paste0(region_name, "_EOS_anomoly_abs_Plot", "_all_guilds_",".png"), 
+       plot = p1, dpi = 300, width = 12, height = 8)
 
 
 #scaled value
@@ -59,6 +62,11 @@ p2 <- EOS_anomoly %>%
   labs(x = "Heatwave month", y = "Heatwave temp (°C)",
        title = "End of simulation anomaly") +
   theme_bw() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 p2
+
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
+
+ggsave(paste0(region_name, "_EOS_anomoly_scaled_Plot", "_all_guilds_",".png"), 
+       plot = p2, dpi = 300, width = 12, height = 8)

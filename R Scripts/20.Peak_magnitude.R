@@ -48,6 +48,11 @@ p1 <- peak_mag %>%
 
 p1
 
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
+
+ggsave(paste0(region_name, "peak_magnitude_abs_Plot", "_all_guilds_",".png"), 
+       plot = p1, dpi = 300, width = 12, height = 8)
+
 # omni_zoo and phyto have much larger anomoly values than the other guilds, so the colour scale is being dominated 
 # by those two and everything else appears white by comparison. 
 
@@ -84,3 +89,8 @@ p2
 
 
 #Are there any other ways i could show this that doesn't use a heat map??
+
+# save out with a naming convention that'll dynamicaly change depending on parameters selected
+
+ggsave(paste0(region_name, "peak_magnitude_scaled_Plot", "_all_guilds_",".png"), 
+       plot = p2, dpi = 300, width = 12, height = 8)
