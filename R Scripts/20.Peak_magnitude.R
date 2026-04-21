@@ -7,7 +7,7 @@ library(ggpattern)
 # load in data 
 # using the big combined file of everything for now whilst the no of columns is small
 
-region_name <- "Brazilian_Shelf_MA"
+region_name <- "Norwegian_Basin_MA"
 data <- readRDS(paste0("./Objects/7.All_data_species_narrowed_", region_name, ".rds"))
 
 
@@ -38,13 +38,13 @@ p1 <- peak_mag %>%
   facet_wrap(vars(guild_group)) +
   geom_tile() +
   scale_fill_gradient() +
-  scale_fill_gradient2(low = "blue", mid = "white", high = "red", midpoint = 0,
+  scale_fill_gradient2(low = "#9100cd", mid = "white", high = "darkorange", midpoint = 0,
                        name = "Peak anomaly") +
   scale_x_discrete(labels = month.abb[1:12]) +
   labs(x = "Heatwave month", y = "Heatwave temp (°C)",
        title = "Peak magnitude anomaly") +
   theme_bw() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 p1
 
@@ -67,7 +67,7 @@ p2 <- peak_mag %>%
   facet_wrap(vars(guild_group)) +
   geom_tile() +
   scale_fill_gradient() +
-  scale_fill_gradient2(low = "blue", mid = "white", high = "red", midpoint = 0,
+  scale_fill_gradient2(low = "#9100cd", mid = "white", high = "darkorange", midpoint = 0,
                        name = "Peak anomaly") +
   scale_x_discrete(labels = month.abb[1:12]) +
   labs(x = "Heatwave month", y = "Heatwave temp (°C)",
@@ -77,9 +77,9 @@ p2 <- peak_mag %>%
 
 p2
 
-# red = the hw scenario that resulted in the largest positive peak anomaly
+# orange = the hw scenario that resulted in the largest positive peak anomaly
 
-# blue = the hw scenario that resulted in the largest negative peak anomoly
+# purple = the hw scenario that resulted in the largest negative peak anomoly
 
 
 
